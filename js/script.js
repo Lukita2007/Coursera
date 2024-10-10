@@ -118,7 +118,14 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-       var homeHtmlToInsertIntoMainPage = insertProperty(
+       var homeHtmlToInsertIntoMainPage = 
+            buildAndShowHomeHTML(categoryMenuItems,
+                                   menuItemsTitleHtml,
+                                   menuItemHtml);
+         
+         
+         
+         insertProperty(
         homeHtmlUrl, 
           "randomCategoryShortName"  ,
          "{{" + chosenCategoryShortName + "}}"
