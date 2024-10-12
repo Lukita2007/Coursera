@@ -122,7 +122,7 @@ function buildAndShowHomeHTML (categories) {
         insertProperty(
         homeHtmlUrl, 
           "randomCategoryShortName"  ,
-         "{{" + chosenCategoryShortName + "}}"
+          "'" + chosenCategoryShortName + "'"
         );
 
 
